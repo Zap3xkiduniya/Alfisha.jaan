@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alfisha 💖 Emergency Kit</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body onclick="autoPlayMusic()">
+
+<!-- Loading -->
+<div id="loading-screen" class="loading-screen">
+    <div class="loading-content">
+        <div class="loading-heart"><i class="fas fa-heart"></i></div>
+        <h2>Preparing love… 💖</h2>
+        <div class="loading-bar"><div class="loading-progress"></div></div>
+    </div>
+</div>
+
+<!-- Music Button -->
+<button id="music-toggle" class="music-toggle">
+    <i class="fas fa-music"></i><span>Music</span>
+</button>
+
+<!-- Screen 1 -->
+<div id="screen1" class="screen active">
+    <div class="welcome-card">
+        <div class="avatar"><div class="avatar-inner"><i class="fas fa-user-circle"></i></div></div>
+        <h1>Hey Alfisha 👀💖</h1>
+        <p>I heard a storm is coming 🌩️🍫</p>
+        <button class="glow-btn" onclick="nextScreen()">Open Emergency Kit 🚨</button>
+    </div>
+</div>
+
+<!-- Screen 2 -->
+<div id="screen2" class="screen">
+    <h1>Period Emergency Kit 😂❤️</h1>
+    <div class="kit-grid">
+        <div class="kit-card"><div class="card-icon">🍫</div><h3>Chocolate Supply</h3><p>Unlimited chocolate subscription activated.</p></div>
+        <div class="kit-card"><div class="card-icon">🤗</div><h3>Free Hug Pass</h3><p>Valid 24/7. No expiry.</p></div>
+        <div class="kit-card"><div class="card-icon">🎬</div><h3>Movie Marathon</h3><p>You choose the movie… even boring ones.</p></div>
+        <div class="kit-card"><div class="card-icon">😌</div><h3>Mood Swing Protection</h3><p>Boyfriend handling service activated.</p></div>
+    </div>
+    <button class="glow-btn" onclick="nextScreen()">But wait… one more thing 💌</button>
+</div>
+
+<!-- Screen 3 -->
+<div id="screen3" class="screen">
+    <div class="romantic-container">
+        <div class="romantic-text">
+            <div class="line">I know these days are not easy…</div>
+            <div class="line">But remember something…</div>
+            <div class="line">You are strong, beautiful and magical ✨</div>
+            <div class="line">And I will always be here for you 🤍</div>
+        </div>
+        <button class="glow-btn" onclick="heartsExplosion()">Tap to See My Heart ❤️</button>
+    </div>
+</div>
+
+<!-- Screen 4 -->
+<div id="screen4" class="screen">
+    <div class="popup-surprise">
+        <div class="warning-header">WARNING ⚠️</div>
+        <h2>This girl is under boyfriend protection during periods.</h2>
+        <div class="side-effects">
+            <div class="effect">• Extra hugs 🤗</div>
+            <div class="effect">• Extra food 🍕</div>
+            <div class="effect">• Extra love ❤️</div>
+        </div>
+        <button class="glow-btn" onclick="hugExplosion()">Send Virtual Hug 🤗</button>
+    </div>
+</div>
+
+<audio id="background-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
